@@ -34,7 +34,7 @@ Proposals::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-  config.action_mailer.default_url_options = { host: 'cfp.burlingtonrubyconference.com' }
+  config.action_mailer.default_url_options = { host: 'cfp.uxburlington.com' }
 
   config.cutoff_date = Date.today + 60
 end

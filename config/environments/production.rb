@@ -72,10 +72,10 @@ Proposals::Application.configure do
     user_name: ENV['MANDRILL_USERNAME'],
     password: ENV['MANDRILL_PASSWORD'], # SMTP password is any valid API key
     authentication: 'login', # Mandrill supports 'plain' or 'login'
-    domain: 'cfp.burlingtonrubyconference.com' # your domain to identify your server when connecting
+    domain: 'cfp.uxburlington.com' # your domain to identify your server when connecting
   }
 
-  config.action_mailer.default_url_options = { host: 'cfp.burlingtonrubyconference.com' }
+  config.action_mailer.default_url_options = { host: 'cfp.uxburlington.com' }
 
   config.paperclip_defaults = {
     storage: :s3,
