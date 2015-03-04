@@ -4,6 +4,59 @@
 @import "foundation/components/grid";
 @import "foundation/components/sub-nav";
 
+$base-font-family: 'Raleway', sans-serif;
+$header-font-family: 'BellotaRegular', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     32px;
+
+$text-color:       #111;
+$background-color: #EDEDEA;
+$brand-color:      #DE5842;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-laptop:        800px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import "base";
+
+a.button {
+  border-radius: 4px;
+  color: white;
+}
+
+.top-bar .title-area .name a {
+  font-family: "BellotaRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.headers {
+  text-align: center;
+}
+
+.welcome-header {
+  font-family: "BellotaRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2.6em;
+  font-style: normal;
+  margin-top: 16px;
+}
+
+
 .voting-status {
   position: fixed;
   left: 50%;

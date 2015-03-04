@@ -1,9 +1,9 @@
 <%- provide(:title, "Welcome to Proposals.") %>
 
-<div class="row">
+<div class="row headers">
   <div class="small-12 columns">
-    <h1>UX Burlington 2015</h1>
-    <h2>Call for Proposals</h2>
+    <h1 class='welcome-header'>UX Burlington 2015</h1>
+    <h2 class='welcome-sub-header'>Call for Proposals</h2>
     <% if past_cutoff_date? %>
       <h4>Proposals are now closed.</h4>
     <% else %>
@@ -12,24 +12,25 @@
   </div>
 </div>
 <div class="row">
-  <div class="small-12 medium-8 columns">
+  <div class="small-12 columns">
     <% unless past_cutoff_date?  %>
       <p>Are you interested in giving a talk at <a
-          href="http://uxburlington.com">UX Burlington 2015 Conference</a>?
+          href="http://uxburlington.com">UX Burlington 2015</a>?
         The conference takes place on June 12<sup>th</sup> in
         Burlington, Vermont. It is a single-track conference with seven 30-minute
         talks. The expected audience is 150 people, and we are looking
-        for four or five additional speakers to join the invited speakers.</p>
+        for four to five additional speakers to join the invited speakers.</p>
       <p>
-        We are looking for talks that appeal to a broad audience of web designers,
+        The theme of the conference is <strong>"What it really takes to build a great user experience on the web"</strong>.
+        We are interested in talks that appeal to a broad audience of web designers,
         developers, authors, and anyone who is passionate about a great user experience.
       </p>
       <p>The process for selecting speakers starts with a blind review, where the
         the top 20 proposals are selected based solely on their abstracts. From
         there, we will pick our favorites that we think are the best fit for the
         conference.</p>
-      <p>If you are interested in speaking, submit as many proposals as you would
-        like. Edit and delete submissions up until the date when the CFP closes
+      <p>If you are interested in speaking, submit <strong>up to three</strong> proposals.
+        Edit and delete submissions up until the date when the CFP closes
         (<%= ApplicationHelper::CutoffDate %>). Lastly, all of the information you
         enter will be used on the site if you are selected to speak. Be sure to
         check for typos!</p>
