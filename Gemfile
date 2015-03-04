@@ -59,7 +59,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug'
   gem 'sqlite3'
 end
 
