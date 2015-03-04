@@ -1,5 +1,5 @@
 class ProposalMailer < ActionMailer::Base
-  default from: 'UX Burlington <pete@agilion.com>'
+  default from: 'UX Burlington <info@uxburlington.com>'
 
   def confirmation(proposal_id)
     @proposal = Proposal.find(proposal_id)
