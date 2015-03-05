@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   has_many :votes
   has_many :hidden_votes
 
-  validates :name, presence: true
+  validates :name, presence: true, on: :update
   validates :email, presence: true, on: :update
   validates :bio, presence: true, on: :update
   validates :photo, attachment_presence: true, on: :update
