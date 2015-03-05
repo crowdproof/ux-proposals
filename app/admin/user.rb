@@ -6,7 +6,7 @@ ActiveAdmin.register User do
     column :email
     column :website
     column :twitter
-    default_actions
+    actions
   end
 
   form html: {enctype: "multipart/form-data" } do |f|
