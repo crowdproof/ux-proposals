@@ -34,7 +34,7 @@ gem 'paperclip', '~> 3.5.2'
 # Simple form builder
 gem "simple_form", "~> 3.0"
 
-gem 'newrelic_rpm'
+gem 'newrelic_rpm', '~> 3.10.0.279'
 
 # ActiveAdmin for managing proposals
 gem 'activeadmin', github: 'activeadmin'
