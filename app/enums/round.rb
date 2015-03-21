@@ -13,7 +13,7 @@ class Round::One < Round
 
   # Number of votes a voter gets to cast in this round
   def total_votes
-    25
+    10
   end
 
   # Will names and other identifying info be hidden from voters?
@@ -34,7 +34,7 @@ class Round::Two < Round
 
   # Number of votes a voter gets to cast in this round
   def total_votes
-    8
+    5
   end
 
   # Will names and other identifying info be hidden from voters?
