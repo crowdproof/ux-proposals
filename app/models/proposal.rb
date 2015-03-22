@@ -11,4 +11,12 @@ class Proposal < ActiveRecord::Base
   def save_and_send_confirmation
     save && ProposalMailer.confirmation(id).deliver
   end
+
+  def votes_round1
+    Vote.where(proposal: self, round: :one).count
+  end
+
+  def votes_round2
+    Vote.where(proposal: self, round: :two).count
+  end
 end
