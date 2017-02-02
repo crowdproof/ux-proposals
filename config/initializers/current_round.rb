@@ -1,1 +1,1 @@
-Rails.application.config.current_round = Round::Three.new
+Rails.application.config.current_round = Round::One.new
