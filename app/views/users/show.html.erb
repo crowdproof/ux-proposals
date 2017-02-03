@@ -11,8 +11,8 @@
     <% end %>
 
     <ul>
-      <% if @user.website.present? %>
-        <li>Website: <%= link_to @user.website, @user.website %></li>
+      <% if @user.location.present? %>
+        <li>Location: <%= @user.location %></li>
       <% end %>
 
       <% if @user.twitter.present? %>
