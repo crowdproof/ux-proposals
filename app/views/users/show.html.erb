@@ -12,7 +12,7 @@
 
     <ul>
       <% if @user.website.present? %>
-        <li>Website: <%= link_to @user.website, @user.website %></li>
+        <li>City/State/Country: <%= @user.website %></li>
       <% end %>
 
       <% if @user.twitter.present? %>
