@@ -21,6 +21,6 @@ module Proposals
     # config.i18n.default_locale = :de
     config.i18n.enforce_available_locales = false
 
-    config.cutoff_date = "March 16th, 2017".to_datetime - 1.minute
+    config.cutoff_date = "March 15th, 2017".to_datetime + 4.hours
   end
 end
