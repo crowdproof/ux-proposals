@@ -13,7 +13,7 @@ class Round::One < Round
 
   # Number of votes a voter gets to cast in this round
   def total_votes
-    25
+    10
   end
 
   # Will names and other identifying info be hidden from voters?
@@ -27,30 +27,30 @@ class Round::One < Round
   end
 end
 
-class Round::One < Round
+class Round::Two < Round
   def text
-    'Round 1'
+    'Round 2'
   end
 
   # Number of votes a voter gets to cast in this round
   def total_votes
-    25
+    4
   end
 
   # Will names and other identifying info be hidden from voters?
   def anonymous?
-    true
+    false
   end
 
   # Proposals displayed during voting
   def proposals
-    Proposal.where(round1: true).order(:title)
+    Proposal.where(round2: true).order(:title)
   end
 end
 
-class Round::One < Round
+class Round::Three < Round
   def text
-    'Round 1'
+    'Round 3'
   end
 
   def total_votes
@@ -58,7 +58,7 @@ class Round::One < Round
   end
 
   def anonymous?
-    true
+    false
   end
 
   def proposals
